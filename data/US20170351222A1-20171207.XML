@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE us-patent-application SYSTEM "us-patent-application-v44-2014-04-03.dtd" [ ]>
+<us-patent-application lang="EN" dtd-version="v4.4 2014-04-03" file="US20170351222A1-20171207.XML" status="PRODUCTION" id="us-patent-application" country="US" date-produced="20171121" date-publ="20171207">
+<us-bibliographic-data-application lang="EN" country="US">
+<publication-reference>
+<document-id>
+<country>US</country>
+<doc-number>20170351222</doc-number>
+<kind>A1</kind>
+<date>20171207</date>
+</document-id>
+</publication-reference>
+<application-reference appl-type="utility">
+<document-id>
+<country>US</country>
+<doc-number>15537500</doc-number>
+<date>20141219</date>
+</document-id>
+</application-reference>
+<us-application-series-code>15</us-application-series-code>
+<classifications-ipcr>
+<classification-ipcr>
+<ipc-version-indicator><date>20060101</date></ipc-version-indicator>
+<classification-level>A</classification-level>
+<section>G</section>
+<class>04</class>
+<subclass>F</subclass>
+<main-group>1</main-group>
+<subgroup>00</subgroup>
+<symbol-position>F</symbol-position>
+<classification-value>I</classification-value>
+<action-date><date>20171207</date></action-date>
+<generating-office><country>US</country></generating-office>
+<classification-status>B</classification-status>
+<classification-data-source>H</classification-data-source>
+</classification-ipcr>
+</classifications-ipcr>
+<classifications-cpc>
+<main-cpc>
+<classification-cpc>
+<cpc-version-indicator><date>20130101</date></cpc-version-indicator>
+<section>G</section>
+<class>04</class>
+<subclass>F</subclass>
+<main-group>1</main-group>
+<subgroup>005</subgroup>
+<symbol-position>F</symbol-position>
+<classification-value>I</classification-value>
+<action-date><date>20171207</date></action-date>
+<generating-office><country>US</country></generating-office>
+<classification-status>B</classification-status>
+<classification-data-source>H</classification-data-source>
+<scheme-origination-code>C</scheme-origination-code>
+</classification-cpc>
+</main-cpc>
+</classifications-cpc>
+<invention-title id="d2e43">TIMER DEVICE AND METHOD FOR OPERATING SAID TIMER DEVICE</invention-title>
+<us-parties>
+<us-applicants>
+<us-applicant sequence="00" app-type="applicant" designation="us-only" applicant-authority-category="assignee">
+<addressbook>
+<orgname>ZOBELE HOLDING SPA</orgname>
+<address>
+<city>Trento</city>
+<country>IT</country>
+</address>
+</addressbook>
+<residence>
+<country>IT</country>
+</residence>
+</us-applicant>
+</us-applicants>
+<inventors>
+<inventor sequence="00" designation="us-only">
+<addressbook>
+<last-name>FIORAVANTI</last-name>
+<first-name>Emilio</first-name>
+<address>
+<city>Trento</city>
+<country>IT</country>
+</address>
+</addressbook>
+</inventor>
+<inventor sequence="01" designation="us-only">
+<addressbook>
+<last-name>GIOVANELLI</last-name>
+<first-name>Alessio</first-name>
+<address>
+<city>Trento</city>
+<country>IT</country>
+</address>
+</addressbook>
+</inventor>
+</inventors>
+</us-parties>
+<pct-or-regional-filing-data>
+<document-id>
+<country>WO</country>
+<doc-number>PCT/EP2014/078692</doc-number>
+<kind>00</kind>
+<date>20141219</date>
+</document-id>
+<us-371c12-date><date>20170619</date></us-371c12-date>
+</pct-or-regional-filing-data>
+</us-bibliographic-data-application>
+<abstract id="abstract">
+<p id="p-0001" num="0000">A timer device comprising a first timer in communication with control means, the control means being in communication with an external component and the first timer sending an order to the control means after a first preset time period is counted by the first timer, the timer device also comprising a second timer in communication with the control means, the second timer counting a second preset time period that is a portion of the first preset time period. The timer device permits an accurate operation, even with changes of temperature and voltage, and with a reduced cost.</p>
+</abstract>
+<drawings id="DRAWINGS">
+<figure id="Fig-EMI-D00000" num="00000">
+<img id="EMI-D00000" he="122.51mm" wi="158.07mm" file="US20170351222A1-20171207-D00000.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00001" num="00001">
+<img id="EMI-D00001" he="122.26mm" wi="157.23mm" file="US20170351222A1-20171207-D00001.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+</drawings>
+<description id="description">
+<?summary-of-invention description="Summary of Invention" end="lead"?>
+<p id="p-0002" num="0001">The present invention refers to a timer device and to a method for operating said timer device.</p>
+<heading id="h-0001" level="1">BACKGROUND OF THE INVENTION</heading>
+<p id="p-0003" num="0002">The timer devices based on microprocessors or microcontrollers are used to control a huge number of electronic and electromechanical devices in a wide range of environmental and temperature conditions, using different power supply methods, from a very stable power supply until batteries.</p>
+<p id="p-0004" num="0003">The main problem to solve for the development of low cost battery powered devices, including fragrance, soap and insecticide dispensers with a timer device comprising one control unit is the consumption control.</p>
+<p id="p-0005" num="0004">A typical method used is to place a control unit in sleeping mode when it is not used, and periodically in an awakening mode in order to allow it to check for some scheduled activities.</p>
+<p id="p-0006" num="0005">The sleep mode reduces the activity of the control unit and its related consumptions near zero. This awakening mode can be accomplished using a particular timer present inside the control unit, and if it is not cleared before it expires, resets the control unit.</p>
+<p id="p-0007" num="0006">However, in these timer devices there are two problems that reduce the timing precision: the voltage and temperature variations affect the accuracy of the internal timers of the control unit, with a consequently variation of the timing generated by them, and the timer usually used is less accurate than other timers.</p>
+<p id="p-0008" num="0007">Since the timing generation is one of the keys of any control system, the accuracy used to accomplish them is essential for a correct operation of the timer device.</p>
+<p id="p-0009" num="0008">Alternative solutions, useful for low cost devices and able to produce an adequately timing require a circuitry external to the control unit. This circuitry increases the cost and complexity of the device, and reduces the number of the available ports on the control unit, normally reduced in the low cost control units.</p>
+<p id="p-0010" num="0009">Therefore, it is evident the need of a timer device and method that permits an accurate operation, even with changes of temperature and voltage and with a reduced cost.</p>
+<heading id="h-0002" level="1">DESCRIPTION OF THE INVENTION</heading>
+<p id="p-0011" num="0010">With the timer device and the method according to the invention said drawbacks can be solved, presenting other advantages that will be described hereinafter.</p>
+<p id="p-0012" num="0011">The timer device according to the present invention comprises a first timer in communication with control means, said control means being in communication with an external component and said first timer sending an order to the control means after a first preset time period is counted by the first timer, and it is characterized in that the timer device also comprises a second timer in communication with said control means, said second timer counting a second preset time period that is a portion of said first preset time period.</p>
+<p id="p-0013" num="0012">According to a preferred embodiment, said first timer is a watchdog timer.</p>
+<p id="p-0014" num="0013">Furthermore, the timer device according to the present invention preferably also comprises a memory in communication with the control means, which memory acts as a counter and is incremented each time the second time period counted by the second timer expires.</p>
+<p id="p-0015" num="0014">Advantageously, said first and second timers are placed inside the timer device, i.e. the second timer is not independent from the timer device.</p>
+<p id="p-0016" num="0015">According to second aspect, the present invention also refers to a method for operating the timer device as described previously, and it comprises the following steps:</p>
+<p id="p-0017" num="0016">set a first time period to be counted by a first timer;</p>
+<p id="p-0018" num="0017">set a second time period to be counted by a second timer, said second time period being a portion of the first time period;</p>
+<p id="p-0019" num="0018">when said second time period is expired, but said first time period is not expired, the second timer begins again the measure of the second time period; and</p>
+<p id="p-0020" num="0019">when said second time period is expired and said first time period is also expired, control means of the timer device are reset, and a component connected with the timer device starts an operation cycle.</p>
+<p id="p-0021" num="0020">In the method according to the present invention, preferably when the second time period is expired but the first time period is not expired, the value of a memory is incremented, and when said second time period is expired and said first time period is also expired the value of the memory is read and it is used to calculate a new time base, which is used as the first time period for the next operation cycle.</p>
+<p id="p-0022" num="0021">According to the present invention, it is provided a timer device and method that permits an accurate operation, even with changes of temperature and voltage and with a reduced cost.</p>
+<?summary-of-invention description="Summary of Invention" end="tail"?>
+<?brief-description-of-drawings description="Brief Description of Drawings" end="lead"?>
+<description-of-drawings>
+<heading id="h-0003" level="1">BRIEF DESCRIPTION OF THE DRAWINGS</heading>
+<p id="p-0023" num="0022">For a better understanding of what has been disclosed, some drawings are attached in which, diagrammatically and only as a non-limitative example a specific embodiment is shown.</p>
+<p id="p-0024" num="0023"><figref idref="DRAWINGS">FIG. 1</figref> is a block diagram of the timer device according to the present invention.</p>
+</description-of-drawings>
+<?brief-description-of-drawings description="Brief Description of Drawings" end="tail"?>
+<?detailed-description description="Detailed Description" end="lead"?>
+<heading id="h-0004" level="1">DESCRIPTION OF A PREFERRED EMBODIMENT</heading>
+<p id="p-0025" num="0024"><figref idref="DRAWINGS">FIG. 1</figref> shows a block diagram of the timer device <b>1</b> according to the present invention, comprising a first timer <b>12</b>, preferably a watchdog timer, in communication with control means <b>11</b>, said control means <b>11</b> being in communication with an external component <b>15</b> and said first timer <b>12</b> sends an order to the control means <b>11</b> after a first preset time period is counted by the first timer <b>12</b>. It must be pointed out that the control means <b>11</b> are fed by a power source <b>10</b>.</p>
+<p id="p-0026" num="0025">The timer device according to the invention also comprises a second timer <b>13</b> in communication with said control means <b>11</b>, said second timer <b>13</b> counting a second preset time period that is a portion of said first preset time period.</p>
+<p id="p-0027" num="0026">The timer device according to the invention also comprises a memory <b>14</b> in communication with the control means <b>11</b>, which memory <b>14</b> acts as a counter and is incremented each time the second time period counted by the second timer <b>13</b> expires, as will be explained hereinafter.</p>
+<p id="p-0028" num="0027">As shown in <figref idref="DRAWINGS">FIG. 1</figref>, said first <b>12</b> and second <b>13</b> timers are placed inside the timer device <b>1</b>, so that the second timer <b>13</b> is not an external element.</p>
+<p id="p-0029" num="0028">Firstly, it must be pointed out that &#x201c;operation cycle&#x201d; is considered all activities done by the control means <b>11</b> in order to follow what the software requires for the component <b>15</b>. If the component <b>15</b> is a fragrance dispenser, the normal operations are the temporized activation/deactivation of the heater or fan, the led blinks, checking for the button activation and change the device status consequently, and so on.</p>
+<p id="p-0030" num="0029">The method according to the invention comprises the following steps:</p>
+<p id="p-0031" num="0030">set a first time period to be counted by a first timer <b>12</b> and a second time period to be counted by a second timer <b>13</b>, said second time period being a portion of the first time period;</p>
+<p id="p-0032" num="0031">when said second time period is expired, but said first time period is not expired, the second timer <b>13</b> begins again the measure of the second time period; and</p>
+<p id="p-0033" num="0032">when said second time period is expired and said first time period is also expired, control means <b>11</b> of the timer device are reset, and a component <b>15</b> connected with the timer device <b>1</b> starts a new operation cycle.</p>
+<p id="p-0034" num="0033">Preferably, when the second time period is expired but the first time period is not expired, the value of a memory <b>14</b> is incremented, and when said second time period is expired and said first time period is also expired the value of the memory <b>14</b> is read and it is used to calculate a new time base, which is used as the first time period for the next operation cycle.</p>
+<p id="p-0035" num="0034">One example of a component is a fragrance dispenser, in which an operation cycle is defined and which is repeated cyclically, for example activating a heater or fan for dispensing the fragrance and then deactivating said heater or fan.</p>
+<p id="p-0036" num="0035">In this case, the first time period can be of 10 seconds, which will be counted by the first timer <b>12</b> and the second time period can be 500 milliseconds, which will be counted by the second timer <b>13</b>.</p>
+<p id="p-0037" num="0036">When the first 500 milliseconds are counted by the second timer <b>13</b> and the second time period is the count of the memory <b>14</b>, originally 0, will be increased by 1, because the first time period will not be expired.</p>
+<p id="p-0038" num="0037">This count of the second time period will be repeated 20 times, until the expiration of the first time period, 10 seconds after. At this time, the control means <b>11</b> will be reset, the value of the memory (in this case 20) will be read, and this value will be used as a basis for calculating a new time base, which will be used as the first time period for the next operation cycle.</p>
+<p id="p-0039" num="0038">Even though reference is made to a specific embodiment of the invention, it is apparent for a person skilled in the art that the timer device and the method are susceptible of numerous variations and modifications, and all the details cited can be substituted by other technically equivalent ones, without departing from the scope of protection defined by the attached claims.</p>
+<?detailed-description description="Detailed Description" end="tail"?>
+</description>
+<claims id="claims">
+<claim id="CLM-00001" num="00001">
+<claim-text><b>1</b>. A timer device, comprising a first timer in communication with control means, said control means being in communication with an external component and said first timer sending an order to the control means after a first preset time period is counted by the first timer, wherein the timer device also comprises a second timer in communication with said control means, said second timer counting a second preset time period that is a portion of said first preset time period.</claim-text>
+</claim>
+<claim id="CLM-00002" num="00002">
+<claim-text><b>2</b>. The timer device according to <claim-ref idref="CLM-00001">claim 1</claim-ref>, wherein said first timer is a watchdog timer.</claim-text>
+</claim>
+<claim id="CLM-00003" num="00003">
+<claim-text><b>3</b>. The timer device according to <claim-ref idref="CLM-00001">claim 1</claim-ref>, wherein it also comprises a memory in communication with the control means, which memory acts as a counter and is incremented each time the second time period counted by the second timer expires.</claim-text>
+</claim>
+<claim id="CLM-00004" num="00004">
+<claim-text><b>4</b>. The timer device according to <claim-ref idref="CLM-00001">claim 1</claim-ref>, wherein said first and second timers are placed inside the timer device.</claim-text>
+</claim>
+<claim id="CLM-00005" num="00005">
+<claim-text><b>5</b>. A method for operating the timer device according to <claim-ref idref="CLM-00001">claim 1</claim-ref>, comprising the following steps:
+<claim-text>set a first time period to be counted by a first timer;</claim-text>
+<claim-text>set a second time period to be counted by a second timer, said second time period being a portion of the first time period;</claim-text>
+<claim-text>when said second time period is expired, but said first time period is not expired, the second timer begins again the measure of the second time period; and</claim-text>
+<claim-text>when said second time period is expired and said first time period is also expired, control means of the timer device are reset, and a component connected with the timer device starts a new operation cycle.</claim-text>
+</claim-text>
+</claim>
+<claim id="CLM-00006" num="00006">
+<claim-text><b>6</b>. The method according to <claim-ref idref="CLM-00005">claim 5</claim-ref>, wherein when the second time period is expired but the first time period is not expired, the value of a memory is incremented, and when said second time period is expired and said first time period is also expired the value of the memory is read and it is used to calculate a new time base, which is used as the first time period for the next operation cycle.</claim-text>
+</claim>
+</claims>
+</us-patent-application>
