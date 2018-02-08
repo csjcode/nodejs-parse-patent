@@ -22,7 +22,7 @@ app.get('/patents/topic/:topic', function (req,res) {
     var topicQuery = req.params.topic.toLowerCase();
     topicQuery = topicQuery.replace(/\+/g,'-')
 
-    request.get('http://api3.freshpatents.com/json/get.php?topic=' + topicQuery, function (error, response, body) {
+    request.get('http://api.freshpatents.com/json/get.php?topic=' + topicQuery, function (error, response, body) {
   
         console.log('STATUS: ' + response.statusCode);
         if (!error && response.statusCode == 200) {
